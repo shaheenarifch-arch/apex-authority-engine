@@ -1,0 +1,60 @@
+name: APEX Daily Authority
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 10 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install Dependencies
+        run: |
+          pnpm install --frozen-lockfile=false
+
+      - name: Run Type Check
+        run: |
+          pnpm typecheck
+
+      - name: Run Tests
+        run: |
+          pnpm test
+
+      - name: Generate Daily Content
+        run: |
+          pnpm daily
+        env:
+          RAMBO_URL: ${{ secrets.RAMBO_URL }}
+          RAMBO_API_KEY: ${{ secrets.RAMBO_API_KEY }}
+
+      - name: Commit Generated Files
+        run: |
+          git config --global user.name "APEX Bot"
+          git config --global user.email "apex@getservices.ai"
+
+          git add .
+
+          git commit -m "Daily authority content update" || exit 0
+
+          git push
