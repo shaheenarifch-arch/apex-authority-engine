@@ -1,0 +1,7 @@
+[
+  {"id":"getservices","name":"GetServices.ai","baseUrl":"https://getservices.ai","contentDir":"content/getservices","focus":["agentic AI","AI operating systems","business automation"],"tone":"authoritative and practical","cta":"Explore GetServices.ai"},
+  {"id":"black","name":"BLACK","baseUrl":"https://black.getservices.ai","contentDir":"content/black","focus":["executive AI","multi-model routing","strategic intelligence"],"tone":"premium and executive","cta":"Unlock BLACK"},
+  {"id":"studio","name":"ROMEO Studio","baseUrl":"https://studio.getservices.ai","contentDir":"content/studio","focus":["AI product creation","websites","apps","organic growth"],"tone":"creative and product-led","cta":"Build with Studio"},
+  {"id":"atlas","name":"ATLAS AEO","baseUrl":"https://getservices.ai","contentDir":"content/atlas","focus":["AEO","structured answers","entity authority"],"tone":"analytical and educational","cta":"Improve visibility with ATLAS"},
+  {"id":"relay","name":"RELAY","baseUrl":"https://getservices.ai","contentDir":"content/relay","focus":["Shopify automation","supplier sync","commerce operations"],"tone":"operational and concrete","cta":"Automate commerce with RELAY"}
+]

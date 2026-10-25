@@ -1,0 +1,10 @@
+[
+  {"topic":"Agentic AI for business operations","cluster":"agentic-ai","intent":"executive education"},
+  {"topic":"Executive AI decision support","cluster":"executive-ai","intent":"thought leadership"},
+  {"topic":"Answer Engine Optimization versus traditional SEO","cluster":"aeo","intent":"comparison"},
+  {"topic":"Building an AI operating system","cluster":"ai-operating-system","intent":"architecture"},
+  {"topic":"AI commerce automation for Shopify","cluster":"commerce-automation","intent":"product education"},
+  {"topic":"Multi-model AI routing for enterprise workflows","cluster":"model-routing","intent":"technical leadership"},
+  {"topic":"How AI studios shorten product delivery cycles","cluster":"ai-studio","intent":"product education"},
+  {"topic":"Authority building for AI-native brands","cluster":"authority","intent":"growth strategy"}
+]

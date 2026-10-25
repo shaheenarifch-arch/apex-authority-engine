@@ -1,0 +1,31 @@
+name: APEX Daily Authority
+on:
+  schedule:
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: {version: 9}
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: pnpm}
+      - run: pnpm install --frozen-lockfile=false
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm daily
+        env:
+          APEX_MODE: draft
+          RAMBO_URL: ${{ secrets.RAMBO_URL }}
+          RAMBO_API_KEY: ${{ secrets.RAMBO_API_KEY }}
+      - name: Commit generated drafts
+        run: |
+          git config user.name "APEX Authority Engine"
+          git config user.email "apex@getservices.ai"
+          git add content reports .runtime
+          git commit -m "APEX daily authority drafts" || exit 0
+          git push

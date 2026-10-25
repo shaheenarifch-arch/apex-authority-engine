@@ -1,0 +1,1 @@
+import{describe,it,expect}from"vitest";import{AeoOptimizer}from"../packages/aeo/src/index.js";describe("AEO",()=>{it("adds FAQ schema",()=>{const a:any={markdown:"# X",faq:[{question:"Q?",answer:"A"}]};const s:any={name:"GetServices.ai"};expect(new AeoOptimizer().optimize(a,s).markdown).toContain("FAQ")})});

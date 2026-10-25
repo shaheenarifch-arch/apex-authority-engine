@@ -1,0 +1,1 @@
+import fs from "node:fs";import path from "node:path";const root="content";for(const site of fs.readdirSync(root)){const dir=path.join(root,site);for(const file of fs.readdirSync(dir).filter(x=>x.endsWith(".md"))){console.log(`${site.padEnd(12)} ${file}`);}}

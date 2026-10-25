@@ -1,0 +1,2 @@
+import type {ManifestItem} from "../../shared/src/types.js";
+export function authorityReport(items:ManifestItem[]){return {generated:items.length,drafts:items.filter(x=>x.status==="DRAFT").length,approved:items.filter(x=>x.status==="APPROVED").length,published:items.filter(x=>x.status==="PUBLISHED").length,failed:items.filter(x=>x.status==="FAILED").length,bySite:Object.groupBy(items,x=>x.siteId)};}

@@ -1,0 +1,8 @@
+services:
+  apex:
+    build: .
+    env_file: .env
+    volumes:
+      - ./content:/app/content
+      - ./reports:/app/reports
+      - ./.runtime:/app/.runtime

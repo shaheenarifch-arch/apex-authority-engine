@@ -1,0 +1,27 @@
+{
+  "name": "apex-authority-engine",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "daily": "tsx apps/worker/src/daily.ts",
+    "preview": "tsx apps/worker/src/preview.ts",
+    "publish": "tsx apps/worker/src/publish-approved.ts",
+    "status": "tsx apps/worker/src/status.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "gray-matter": "^4.0.3",
+    "slugify": "^1.6.6",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}
