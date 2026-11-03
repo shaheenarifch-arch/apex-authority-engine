@@ -2,59 +2,57 @@ name: APEX Daily Authority
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "0 10 * * *"
 
 permissions:
   contents: write
 
+concurrency:
+  group: apex-daily
+  cancel-in-progress: false
+
 jobs:
   generate:
-
     runs-on: ubuntu-latest
-
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
+
+      # pnpm version comes from "packageManager" in package.json.
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile=false
 
-      - name: Install Dependencies
-        run: |
-          pnpm install --frozen-lockfile=false
+      - name: Type check
+        run: pnpm typecheck
 
-      - name: Run Type Check
-        run: |
-          pnpm typecheck
+      - name: Tests
+        run: pnpm test
 
-      - name: Run Tests
-        run: |
-          pnpm test
-
-      - name: Generate Daily Content
-        run: |
-          pnpm daily
+      # RAMBO_URL: the RAMBO gateway, e.g. https://black.getservices.ai
+      # RAMBO_API_KEY: the gateway's BLACK_ACCESS_CODE (or the rambo-router API key).
+      # Without them, or if RAMBO fails for a site, local template drafts are written instead.
+      - name: Generate daily drafts
+        run: pnpm daily
         env:
+          APEX_MODE: draft
           RAMBO_URL: ${{ secrets.RAMBO_URL }}
           RAMBO_API_KEY: ${{ secrets.RAMBO_API_KEY }}
 
-      - name: Commit Generated Files
+      # .runtime is git-ignored locally; the manifest is force-added so approvals survive between runs.
+      - name: Commit drafts
         run: |
-          git config --global user.name "APEX Bot"
-          git config --global user.email "apex@getservices.ai"
-
-          git add .
-
-          git commit -m "Daily authority content update" || exit 0
-
+          git config user.name "APEX Authority Engine"
+          git config user.email "apex@getservices.ai"
+          git add content reports
+          git add -f .runtime
+          git commit -m "APEX daily authority drafts" || exit 0
           git push

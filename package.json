@@ -2,6 +2,7 @@
   "name": "apex-authority-engine",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "packageManager": "pnpm@9.12.0",
   "scripts": {
     "daily": "tsx apps/worker/src/daily.ts",
