@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-03",
+  "items": [
+    {
+      "siteId": "getservices",
+      "file": "content/getservices/2026-11-03-agentic-ai-for-business-operations-a-practical-guide-from-getservicesai.md",
+      "title": "Agentic AI for business operations: A Practical Guide from GetServices.ai",
+      "slug": "agentic-ai-for-business-operations-a-practical-guide-from-getservicesai",
+      "status": "DRAFT",
+      "generatedAt": "2026-11-03T17:25:07.645Z",
+      "generator": "local"
+    },
+    {
+      "siteId": "black",
+      "file": "content/black/2026-11-03-multi-model-ai-routing-for-enterprise-workflows-a-practical-guide-from-black.md",
+      "title": "Multi-model AI routing for enterprise workflows: A Practical Guide from BLACK",
+      "slug": "multi-model-ai-routing-for-enterprise-workflows-a-practical-guide-from-black",
+      "status": "DRAFT",
+      "generatedAt": "2026-11-03T17:25:07.646Z",
+      "generator": "local"
+    },
+    {
+      "siteId": "studio",
+      "file": "content/studio/2026-11-03-executive-ai-decision-support-a-practical-guide-from-romeo-studio.md",
+      "title": "Executive AI decision support: A Practical Guide from ROMEO Studio",
+      "slug": "executive-ai-decision-support-a-practical-guide-from-romeo-studio",
+      "status": "DRAFT",
+      "generatedAt": "2026-11-03T17:25:07.647Z",
+      "generator": "local"
+    },
+    {
+      "siteId": "atlas",
+      "file": "content/atlas/2026-11-03-answer-engine-optimization-versus-traditional-seo-a-practical-guide-from-atlas-aeo.md",
+      "title": "Answer Engine Optimization versus traditional SEO: A Practical Guide from ATLAS AEO",
+      "slug": "answer-engine-optimization-versus-traditional-seo-a-practical-guide-from-atlas-aeo",
+      "status": "DRAFT",
+      "generatedAt": "2026-11-03T17:25:07.649Z",
+      "generator": "local"
+    },
+    {
+      "siteId": "relay",
+      "file": "content/relay/2026-11-03-ai-commerce-automation-for-shopify-a-practical-guide-from-relay.md",
+      "title": "AI commerce automation for Shopify: A Practical Guide from RELAY",
+      "slug": "ai-commerce-automation-for-shopify-a-practical-guide-from-relay",
+      "status": "DRAFT",
+      "generatedAt": "2026-11-03T17:25:07.650Z",
+      "generator": "local"
+    }
+  ]
+}
