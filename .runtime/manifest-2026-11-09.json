@@ -1,0 +1,47 @@
+[
+  {
+    "siteId": "getservices",
+    "file": "content/getservices/2026-11-09-authority-building-for-ai-native-brands-a-practical-guide-from-getservicesai.md",
+    "title": "Authority building for AI-native brands: A Practical Guide from GetServices.ai",
+    "slug": "authority-building-for-ai-native-brands-a-practical-guide-from-getservicesai",
+    "status": "DRAFT",
+    "generatedAt": "2026-11-09T20:16:48.626Z",
+    "generator": "local"
+  },
+  {
+    "siteId": "black",
+    "file": "content/black/2026-11-09-multi-model-ai-routing-for-enterprise-workflows-a-practical-guide-from-black.md",
+    "title": "Multi-model AI routing for enterprise workflows: A Practical Guide from BLACK",
+    "slug": "multi-model-ai-routing-for-enterprise-workflows-a-practical-guide-from-black",
+    "status": "DRAFT",
+    "generatedAt": "2026-11-09T20:16:48.627Z",
+    "generator": "local"
+  },
+  {
+    "siteId": "studio",
+    "file": "content/studio/2026-11-09-agentic-ai-for-business-operations-a-practical-guide-from-romeo-studio.md",
+    "title": "Agentic AI for business operations: A Practical Guide from ROMEO Studio",
+    "slug": "agentic-ai-for-business-operations-a-practical-guide-from-romeo-studio",
+    "status": "DRAFT",
+    "generatedAt": "2026-11-09T20:16:48.629Z",
+    "generator": "local"
+  },
+  {
+    "siteId": "atlas",
+    "file": "content/atlas/2026-11-09-answer-engine-optimization-versus-traditional-seo-a-practical-guide-from-atlas-aeo.md",
+    "title": "Answer Engine Optimization versus traditional SEO: A Practical Guide from ATLAS AEO",
+    "slug": "answer-engine-optimization-versus-traditional-seo-a-practical-guide-from-atlas-aeo",
+    "status": "DRAFT",
+    "generatedAt": "2026-11-09T20:16:48.629Z",
+    "generator": "local"
+  },
+  {
+    "siteId": "relay",
+    "file": "content/relay/2026-11-09-ai-commerce-automation-for-shopify-a-practical-guide-from-relay.md",
+    "title": "AI commerce automation for Shopify: A Practical Guide from RELAY",
+    "slug": "ai-commerce-automation-for-shopify-a-practical-guide-from-relay",
+    "status": "DRAFT",
+    "generatedAt": "2026-11-09T20:16:48.630Z",
+    "generator": "local"
+  }
+]
