@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-10",
+  "items": [
+    {
+      "siteId": "getservices",
+      "file": "content/getservices/2026-11-10-how-ai-studios-shorten-product-delivery-cycles-a-practical-guide-from-getservicesai.md",
+      "title": "How AI studios shorten product delivery cycles: A Practical Guide from GetServices.ai",
+      "slug": "how-ai-studios-shorten-product-delivery-cycles-a-practical-guide-from-getservicesai",
+      "status": "DRAFT",
+      "generatedAt": "2026-11-10T17:22:26.061Z",
+      "generator": "local"
+    },
+    {
+      "siteId": "black",
+      "file": "content/black/2026-11-10-multi-model-ai-routing-for-enterprise-workflows-a-practical-guide-from-black.md",
+      "title": "Multi-model AI routing for enterprise workflows: A Practical Guide from BLACK",
+      "slug": "multi-model-ai-routing-for-enterprise-workflows-a-practical-guide-from-black",
+      "status": "DRAFT",
+      "generatedAt": "2026-11-10T17:22:26.062Z",
+      "generator": "local"
+    },
+    {
+      "siteId": "studio",
+      "file": "content/studio/2026-11-10-authority-building-for-ai-native-brands-a-practical-guide-from-romeo-studio.md",
+      "title": "Authority building for AI-native brands: A Practical Guide from ROMEO Studio",
+      "slug": "authority-building-for-ai-native-brands-a-practical-guide-from-romeo-studio",
+      "status": "DRAFT",
+      "generatedAt": "2026-11-10T17:22:26.063Z",
+      "generator": "local"
+    },
+    {
+      "siteId": "atlas",
+      "file": "content/atlas/2026-11-10-answer-engine-optimization-versus-traditional-seo-a-practical-guide-from-atlas-aeo.md",
+      "title": "Answer Engine Optimization versus traditional SEO: A Practical Guide from ATLAS AEO",
+      "slug": "answer-engine-optimization-versus-traditional-seo-a-practical-guide-from-atlas-aeo",
+      "status": "DRAFT",
+      "generatedAt": "2026-11-10T17:22:26.064Z",
+      "generator": "local"
+    },
+    {
+      "siteId": "relay",
+      "file": "content/relay/2026-11-10-ai-commerce-automation-for-shopify-a-practical-guide-from-relay.md",
+      "title": "AI commerce automation for Shopify: A Practical Guide from RELAY",
+      "slug": "ai-commerce-automation-for-shopify-a-practical-guide-from-relay",
+      "status": "DRAFT",
+      "generatedAt": "2026-11-10T17:22:26.064Z",
+      "generator": "local"
+    }
+  ]
+}
